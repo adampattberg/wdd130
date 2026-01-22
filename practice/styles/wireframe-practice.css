@@ -1,11 +1,102 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
+    font-size: 100%;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    padding: 1em;
+}
+
+header > nav {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+header > nav > a {
+    color: white;
+    text-decoration: none;
+}
+
+header img {
+    border-radius: 50%;
+    margin: 1em auto;
+}
+
+#image-scroller {
+    position: relative;
+}
+
+#image-scroller h1 {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#image-scroller p {
+    position: absolute;
+    top: 50%;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0 1em;
+}
+
+#image-scroller img {
+    width: 100%;
+}
+
+#prod-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+    padding: 2em;
+}
+
+.product h2 {
+    font-size: 1em;
+}
+
+.product p {
+    font-size: 0.8em;
+}
+
+.product img {
+    border-radius: 5%;
+    box-shadow: 1px 1px 10px #555;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    padding: 1em;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 1em;
+
 }

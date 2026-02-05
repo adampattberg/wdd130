@@ -13,10 +13,10 @@
         }
         #content{
             max-width: 850px;
-            max-height: 600px;
             background-image: url("images/christus.webp");
             background-size: cover;
-            background-position: 50% 30%;
+            background-position: top center;
+            background-repeat: no-repeat;
             border: 5px solid black;
             margin: 20px auto;
             padding: 1em;
@@ -24,9 +24,10 @@
             border-radius: 20px;
         }
         #first-presidency{
-            gap: 1em;
-            width: 100%;
-            margin: 0 auto;
+            gap: 1.5em;
+            margin-bottom: 1.5em;
+            display: flex;
+            justify-content: center;
         }
         img{
             border-radius: 50%;
@@ -51,16 +52,12 @@
         #quorum{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            justify-content: center;
-            gap: 1em;
-            width: 75%;
+            justify-items: center;
+            gap: 1.5em;
+            width: 80%;
             margin: 0 auto;
         }
-        h1{
-            font-family: Arial, Helvetica, sans-serif;
-            color: #E8ECED;
-        }
-        h2{
+        h1, h2{
             font-family: Arial, Helvetica, sans-serif;
             color: #E8ECED;
         }
@@ -76,10 +73,10 @@
             <div id="title">
                 <h1>First Presidency</h1>
             </div>
-            <div id="first presidency">
-            <img class="large image" src="images/eyring.webp" alt="Eyring Portrait">
-            <img class="medium image" src="images/oaks.webp" alt="Oaks Portrait">
-            <img class="medium image" src="images/christofferson.webp" alt="christofferson Portrait">
+            <div id="first-presidency">
+            <img class="medium-image" src="images/eyring.webp" alt="Eyring Portrait">
+            <img class="large-image" src="images/oaks.webp" alt="Oaks Portrait">
+            <img class="medium-image" src="images/christofferson.webp" alt="christofferson Portrait">
             </div>
         </div>
         <div id="center">
@@ -87,18 +84,18 @@
                 <h2>Quorum of the Twelve Apostles</h2>
             </div>
             <div id="quorum">
-            <img class="small images" src="images/holland.webp" alt="Holland Portrait">
-            <img class="small images" src="images/uchtdorf.webp" alt="Uchtdorf Portrait">
-            <img class="small images" src="images/bednar.webp" alt="Bednar Portrait">
-            <img class="small images" src="images/cook.webp" alt="Cook Portrait">
-            <img class="small images" src="images/anderson.webp" alt="Anderson">
-            <img class="small images" src="images/rasband.webp" alt="Rasband Portrait">
-            <img class="small images" src="images/stevenson.webp" alt="Stevenson Portrait">
-            <img class="small images" src="images/renlund.webp" alt="Renlund Portrait">
-            <img class="small images" src="images/gong.webp" alt="Gong Portrait">
-            <img class="small images" src="images/soares.webp" alt="Soares Portrait">
-            <img class="small images" src="images/kearon.webp" alt="Kearon Portrait">
-            <img class="small images" src="images/causse.webp" alt="Causse Portrait">
+            <img class="small-image" src="images/holland.webp" alt="Holland Portrait">
+            <img class="small-image" src="images/uchtdorf.webp" alt="Uchtdorf Portrait">
+            <img class="small-image" src="images/bednar.webp" alt="Bednar Portrait">
+            <img class="small-image" src="images/cook.webp" alt="Cook Portrait">
+            <img class="small-image" src="images/anderson.webp" alt="Anderson">
+            <img class="small-image" src="images/rasband.webp" alt="Rasband Portrait">
+            <img class="small-image" src="images/stevenson.webp" alt="Stevenson Portrait">
+            <img class="small-image" src="images/renlund.webp" alt="Renlund Portrait">
+            <img class="small-image" src="images/gong.webp" alt="Gong Portrait">
+            <img class="small-image" src="images/soares.webp" alt="Soares Portrait">
+            <img class="small-image" src="images/kearon.webp" alt="Kearon Portrait">
+            <img class="small-image" src="images/causse.webp" alt="Causse Portrait">
             </div>
         </div>
      </div>

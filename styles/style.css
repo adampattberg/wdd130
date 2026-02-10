@@ -89,6 +89,11 @@ nav a{
     color: white;
 }
 
+#content2{
+    background-color: gray;
+    justify-items: center;
+}
+
 footer{
     background-color: gray;
     color: white;

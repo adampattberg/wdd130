@@ -47,4 +47,10 @@ body {
   justify-items: center;
 }
 
+input [type=text]{
+  width: 150px;
+}
 
+label{
+
+}

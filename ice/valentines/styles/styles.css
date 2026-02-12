@@ -1,1 +1,57 @@
 /* Add your CSS here to style your valentines day page */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f45353;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+nav{
+    border: 3px solid bisque;
+    justify-items: center;
+    background-color: bisque;
+    box-shadow: 5px 5px 10px #000000
+}
+
+main{
+    justify-items: center;
+}
+
+h1{
+    margin: 10px;
+    color: bisque;
+    text-shadow: 3px 3px 3px #000000;
+}
+
+img{
+    border: 8px solid bisque;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+section{
+    border: 3px solid bisque;
+    justify-items: center;
+    margin: 10px;
+    background-color: bisque;
+    box-shadow: 5px 5px 10px #000000
+}
+
+p{
+    padding: 5px;
+}
+
+footer{
+    color: bisque;
+    text-shadow: 3px 3px 3px #000000
+}

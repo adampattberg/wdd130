@@ -1,4 +1,5 @@
-/* Colors needed #98c1d9, #6969b3, #553a7b, #4b244a, #25171a*/
+/* Colors needed #98c1d9, #6969b3, #553a7b, #4b244a, #25171a
+Fonts needed are Arial, Helvetica, and Sans-Serif*/
 
 *{
     box-sizing: border-box;
@@ -12,6 +13,7 @@ body{
     background-color: #553a7b;
     font-size: 20px;
     max-height: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img{
@@ -28,6 +30,7 @@ nav{
     padding: 2em;
     margin-bottom: 5px;
     box-shadow: 5px 5px 10px #6f7364;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo{
@@ -39,6 +42,7 @@ nav{
 nav a{
     color: black;
     text-decoration: none;
+    text-align: center;
 }
 
 nav a:hover{
@@ -76,12 +80,29 @@ nav a:hover{
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+#blue:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#red:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#green:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
 h2{
     justify-self: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p{
     padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #about{
@@ -112,6 +133,10 @@ p{
     color: black;
 }
 
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #content2{
     background-color: #98c1d9;
     justify-items: center;
@@ -128,6 +153,8 @@ p{
 
 #list{
     padding: 5px;
+    font-size: large;
+    margin-left: 5px;
 }
 
 ul{
@@ -135,7 +162,7 @@ ul{
 }
 
 li{
-    padding: 5px;
+    padding: 13px;
 }
 
 /*Table Code V*/
@@ -168,10 +195,11 @@ tr{
 footer{
     background-color: #98c1d9;
     color: black;
-    padding: 25px 50px;
+    padding: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     align-items: center;
     border: 3px solid black;
     box-shadow: 5px 5px 10px #6f7364;
+    font-family: Arial, Helvetica, sans-serif;
 }

@@ -11,6 +11,7 @@ body{
     margin: 0 auto;
     background-color: #553a7b;
     font-size: 20px;
+    max-height: auto;
 }
 
 img{
@@ -127,14 +128,14 @@ p{
     padding: 5px;
 }
 
-ul{
-    justify-items: left;
-}
-
 table{
     border-collapse: collapse;
     margin: 2px;
     border: 3px solid black;
+}
+
+ul{
+    justify-items: left;
 }
 
 th{
@@ -148,6 +149,10 @@ th, td{
 
 tr{
     border-bottom: 3px solid black;
+}
+
+.formrow{
+    margin: 5px;
 }
 
 footer{

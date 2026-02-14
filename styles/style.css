@@ -124,18 +124,26 @@ p{
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/*List Code V*/
+
 #list{
     padding: 5px;
 }
+
+ul{
+    justify-items: left;
+}
+
+li{
+    padding: 5px;
+}
+
+/*Table Code V*/
 
 table{
     border-collapse: collapse;
     margin: 2px;
     border: 3px solid black;
-}
-
-ul{
-    justify-items: left;
 }
 
 th{
@@ -150,6 +158,8 @@ th, td{
 tr{
     border-bottom: 3px solid black;
 }
+
+/*Row Code V*/
 
 .formrow{
     margin: 5px;

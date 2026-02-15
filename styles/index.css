@@ -23,7 +23,7 @@ img{
 }
 
 nav{
-    border: 3px solid black;
+    border: 3px solid #4b244a;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
@@ -41,7 +41,7 @@ nav{
 }
 
 nav a{
-    color: black;
+    color: #25171a;
     text-decoration: none;
     text-align: center;
 }
@@ -61,7 +61,7 @@ nav a:hover{
 #about{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    border: 3px solid black;
+    border: 3px solid #4b244a;
     text-align: center;
     box-shadow: 5px 5px 10px #6f7364;
     margin-top: 10px;
@@ -84,7 +84,7 @@ nav a:hover{
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 10px;
-    color: black;
+    color: #25171a;
 }
 
 h1{
@@ -95,7 +95,7 @@ h1{
     background-color: lightblue;
     grid-column: 3/4;
     grid-row: 2/3;
-    border: 3px solid black;
+    border: 3px solid #4b244a;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
@@ -103,7 +103,7 @@ h1{
     background-color: lightcoral;
     grid-column: 2/3;
     grid-row: 2/3;
-    border: 3px solid black;
+    border: 3px solid #4b244a;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
@@ -111,7 +111,7 @@ h1{
     background-color: lightgreen;
     grid-column: 1/2;
     grid-row: 2/3;
-    border: 3px solid black;
+    border: 3px solid #4b244a;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
@@ -151,10 +151,10 @@ p{
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 3px solid black;
+    border: 3px solid #4b244a;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: black;
+    color: #25171a;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
@@ -179,11 +179,11 @@ li{
 table{
     border-collapse: collapse;
     margin: 2px;
-    border: 3px solid black;
+    border: 3px solid #4b244a;
 }
 
 th{
-    border: 3px solid black;
+    border: 3px solid #4b244a;
     text-align: left;
 }
 
@@ -192,7 +192,7 @@ th, td{
 }
 
 tr{
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #4b244a;
 }
 
 /*Row Code V*/
@@ -203,12 +203,12 @@ tr{
 
 footer{
     background-color: #98c1d9;
-    color: black;
+    color: #25171a  ;
     padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid black;
+    border: 3px solid #4b244a;
     box-shadow: 5px 5px 10px #6f7364;
     font-family: Arial, Helvetica, sans-serif;
 }

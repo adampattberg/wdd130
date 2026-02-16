@@ -92,7 +92,7 @@ h1{
 }
 
 #blue{
-    background-color: lightblue;
+    background-color: #CC7178;
     grid-column: 3/4;
     grid-row: 2/3;
     border: 3px solid #4b244a;
@@ -100,7 +100,7 @@ h1{
 }
 
 #red{
-    background-color: lightcoral;
+    background-color: #CC7178;
     grid-column: 2/3;
     grid-row: 2/3;
     border: 3px solid #4b244a;
@@ -108,7 +108,7 @@ h1{
 }
 
 #green{
-    background-color: lightgreen;
+    background-color: #CC7178;
     grid-column: 1/2;
     grid-row: 2/3;
     border: 3px solid #4b244a;
@@ -147,7 +147,7 @@ p{
 
 
 #content2{
-    background-color: #98c1d9;
+    background-color: #CC7178;
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

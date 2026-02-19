@@ -74,6 +74,82 @@
             background: white;
             clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
         }
+
+        #denmark{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2.5em;
+            height: 200px;
+            width: 300px;
+            background-color: white;
+        }
+
+        #dred1, #dred2, #dred3, #dred4{
+            background-color: red;
+        }
+
+        #finland{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2.5em;
+            height: 200px;
+            width: 300px;
+            background-color: blue;
+        }
+
+        #fwhite1, #fwhite2, #fwhite3, #fwhite4{
+            background-color: white;
+        }
+
+        #benin{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;
+        }
+
+        #bgreen{
+            grid-column: 1/2;
+            grid-row: 1/3;
+            background-color: green;
+        }
+
+        #byellow{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            background-color: yellow;
+        }
+
+        #bred{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            background-color: red;
+        }
+
+        #italy{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 200px;
+            width: 300px;
+        }
+
+        #igreen{
+            grid-column: 1/2;
+            background-color: green;
+        }
+
+        #iwhite{
+            grid-column: 2/3;
+            background-color: white;
+        }
+
+        #ired{
+            grid-column: 3/4;
+            background-color: red;
+        }
+
     </style>
 </head>
 
@@ -116,6 +192,14 @@
             <div id="byellow"></div>
             <div id="bred"></div>
         </div>
+
+        <h2>Italy</h2>
+        <div id="italy">
+            <div id="igreen"></div>
+            <div id="iwhite"></div>
+            <div id="ired"></div>
+        </div>
+        
         <hr>
     </main>
 </body>

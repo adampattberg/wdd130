@@ -36,7 +36,7 @@ def send():
         server.login(sender_email, sender_password)
         server.send_message(msg)
 
-    return "Message sent successfully!"
+    return render_template("thankyou.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

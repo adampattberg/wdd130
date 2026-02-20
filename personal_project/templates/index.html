@@ -24,7 +24,7 @@
 
         <div id="about">
             <div id="about-box">
-                <img id="about-img" src="images/FZR-Sunset-Zoom.jpg" alt="Image of purple motorcycle with sunset in background">
+                <img id="about-img" src="{{ url_for('static', filename='images/FZR-Sunset-Zoom.jpg') }}" alt="Image of purple motorcycle with sunset in background">
             </div>
             <section id="about-msg">
                 <h1 class="about-title">Adam Pattberg</h1>
@@ -37,19 +37,19 @@
 
         <section id="blue">
             <h2>EMT Certification</h2>
-            <img class="box-content" src="images/OEC-Award.jpeg" alt="2nd Place Award in OEC Competition">
+            <img class="box-content" src="{{ url_for('static', filename='images/OEC-Award.jpeg') }}" alt="2nd Place Award in OEC Competition">
             <p>I earned my Emergency Medical Technician Certification on 06/21/2022 through my high school. The program I went through was called Opportunities in Emergency Care and it was great! I then worked as an EMT for about a year. It was a great experience and I have a lot of respect for those in the first responder industry. </p>
         </section>
 
         <section id="red">
             <h2>BYUI SAE</h2>
-            <img class="box-content" src="images/byui-sae-logo.png" alt="BYUI SAE Logo">
+            <img class="box-content" src="{{ url_for('static', filename='images/byui-sae-logo.png') }}" alt="BYUI SAE Logo">
             <p>As of 01/18/2026 I have been involved in BYUI SAE Leadership. I am a part of the social media team, assisting with workshopping, creating, editing, and posting of our social media presence on Instagram and Facebook. This experience has allowed me to get comfortable with talking to others, intiating conversations, and being on camera.</p>
         </section>
 
         <section id="green">
             <h2>Data Analysis</h2>
-            <img class="box-content" src="images/CAN-BUS-Data.png" alt="CAN BUS Data">
+            <img class="box-content" src="{{ url_for('static', filename='images/CAN-BUS-Data.png') }}" alt="CAN BUS Data">
             <p>One of my favorite parts about going to BYUI is that their automotive program is hands on and modern. They teach you not only electrical, which is crucial, but also data acquisition and analysis. This includes using a PicoScope to gather electrical signals from various sensors or computers. The most fascinating of which is CAN BUS signals.</p>
         </section>
     </div>
@@ -114,7 +114,7 @@
     </main>
     <footer>
         <a target="_blank" id="header-logo" href="index.html">
-            <img class="logo" src="images/adam-logo-square.jpg" alt="Adam Intial">
+            <img class="logo" src="{{ url_for('static', filename='images/adam-logo-square.jpg') }}" alt="Adam Intial">
         </a>
         <p>&copy; 2025 Adam Pattberg</p>
     </footer>

@@ -15,8 +15,8 @@ def send():
     message = request.form["message"]
 
     sender_email = "adam.pattberg@gmail.com"
-    sender_password = "yceq jjih pcfo wxcd"   # Gmail app password
-    receiver_email = "adam.pattberg#gmail.com"
+    sender_password = "roij oghv wimr hrvn"   # Gmail app password
+    receiver_email = "adam.pattberg@gmail.com"
 
     body = f"""
     New Contact Form Submission

@@ -19,8 +19,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-    sender_email = os.getenv("EMAIL_USER")
-    sender_password = os.getenv("EMAIL_PASS")
+    sender_email = os.environ.get("EMAIL_USER")
+    sender_password = os.environ.get("EMAIL_PASS")
     receiver_email = "adam.pattberg@gmail.com"
 
     body = f"""

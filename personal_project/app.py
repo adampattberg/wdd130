@@ -14,8 +14,13 @@ def send():
     email = request.form["email"]
     message = request.form["message"]
 
-    sender_email = "adam.pattberg@gmail.com"
-    sender_password = "roij oghv wimr hrvn"   # Gmail app password
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+    sender_email = os.getenv("EMAIL_USER")
+    sender_password = os.getenv("EMAIL_PASS")
     receiver_email = "adam.pattberg@gmail.com"
 
     body = f"""
@@ -39,4 +44,4 @@ def send():
     return render_template("thankyou.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

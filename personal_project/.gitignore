@@ -1,0 +1,6 @@
+.env
+EMAIL_USER=adam.pattberg@gmail.com
+EMAIL_PASS=roij oghv wimr hrvn
+.venv
+__pycache__/
+*.pyc

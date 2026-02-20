@@ -92,19 +92,19 @@
                     </table>
                 </section>
 
-            <form class="form">
+            <form class="form" method="post" action="/send">
                 <h2>Contact Me</h2>
                 <div class="formrow">
                     <label for="Name">Name:</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required>
                 </div>  
                 <div class="formrow"> 
                     <label for="Email">Email:</label>
-                    <input type="text" id="email" name="email">
+                    <input type="text" id="email" name="email" required>
                 </div>
                 <div class="formrow">
                     <label for="Message">Message:</label>
-                    <textarea class="message"></textarea>
+                    <textarea id="message" name="message" required></textarea>
                 </div>
                 <input type="submit" value="Submit">
                 </div>

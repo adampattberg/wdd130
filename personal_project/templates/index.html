@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Pattberg | WDD130 | Home</title>
-    <link target="_blank" rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
 </head>
 
 <body>
     <header>
         <nav>
         <a id="header-logo" href="index.html">
-            <img class="logo" src="images/adam-logo-square.jpg" alt="Adam Intial">
+            <img class="logo" src="{{ url_for('static', filename='images/adam-logo-square.jpg') }}" alt="Adam Intial">
         </a>
             <a target="_blank" href="wwr/index.html">White Water Rafting Webpage</a>
             <a target="_blank" href="wwr/site-plan-rafting.html">White Water Rafting Webpage Siteplan</a>

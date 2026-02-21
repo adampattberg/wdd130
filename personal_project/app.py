@@ -15,20 +15,20 @@ def home():
 def white_water_rafting():
     return render_template("index.html")  # change to actual template if needed
 
-# About page
-@app.route("/about")
-def about():
-    return render_template("aboutme.html")
+# Site plan rafting page
+@app.route("/site-plan-rafting")
+def site_plan_rafting():
+    return render_template("site-plan-rafting.html")
 
 # ICE page
 @app.route("/ice")
 def ice():
     return render_template("ice.html")
 
-# Site plan rafting page
-@app.route("/site-plan-rafting")
-def site_plan_rafting():
-    return render_template("site-plan-rafting.html")
+# About page
+@app.route("/about")
+def about():
+    return render_template("aboutme.html")
 
 # Prophet Card
 @app.route("/prophet-card")

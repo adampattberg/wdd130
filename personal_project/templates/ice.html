@@ -11,9 +11,9 @@
 <body>
     <header>
         <nav>
-        <a id="header-logo" href="index.html">
-            <img class="logo" src="images/adam-logo-square.jpg" alt="Adam Intial">
-        </a>
+            <a id="header-logo" href="{{ url_for('home') }}">
+                <img class="logo" src="{{ url_for('static', filename='images/adam-logo-square.jpg') }}" alt="Adam Initial">
+            </a>
             <a target="_blank" href="wwr/index.html">White Water Rafting Webpage</a>
             <a target="_blank" href="wwr/site-plan-rafting.html">White Water Rafting Webpage Siteplan</a>
             <a target="_blank" href="ice/index.html">ICE</a>
@@ -24,31 +24,31 @@
         <section id="content">
             <a target="_blank" id="prophet-card" href="ice/prophet_cards/nelson.html">
                 <h2>Prophet Card</h2>
-                <img class="box-content" src="ice/prophet_cards/ProphetCard_wireframe.png" alt="Prophet Card Website Wireframe">
+                <img class="box-content" src="{{ url_for('static', filename='images/ProphetCard_wireframe.png') }}" alt="Prophet Card Website Wireframe">
                 <p>This In Class Exercise (ICE) focused on several aspects, but the main one was creation and layout of the list.</p>
             </a>
 
             <a target="_blank" id="apostle-spotlight" href="ice/apostle_spotlight/apostles.html">
                 <h2>Apostle Spotlight</h2>
-                <img class="box-content" src="ice/apostle_spotlight/ApostleSpotlight_Design.png" alt="Apostle Spotlight Website Wireframe">
+                <img class="box-content" src="{{ url_for('static', filename='images/ApostleSpotlight_Design.png') }}" alt="Apostle Spotlight Website Wireframe">
                 <p>This In Class Exercise (ICE) focused on utilizing the display: grid; function and getting the layout correct.</p>
             </a>
 
             <a target="_blank" id="favorite-devo" href="ice/favorite_devo/favdevo.html">
                 <h2>Favorite Devotional</h2>
-                <img class="box-content" src="ice/favorite_devo/favorite_devo/images/icenter.png" alt="BYU Idaho Center">
+                <img class="box-content" src="{{ url_for('static', filename='images/icenter.png') }}" alt="BYU Idaho Center">
                 <p>This In Class Exercise (ICE) focused on making tables and forms that users can interact with.</p>
             </a>
 
             <a target="_blank" id="holiday-page" href="ice/valentines/index.html">
                 <h2>Holiday Page</h2>
-                <img class="box-content" src="ice/valentines/images/valentines.png" alt="Valentines Image">
+                <img class="box-content" src="{{ url_for('static', filename='images/valentines.png') }}" alt="Valentines Image">
                 <p>This In Class Exercise (ICE) was intended for students to have artistic liberty to design the page however they wanted with only CSS.</p>
             </a>
 
             <a target="_blank" id="grid-flags" href="ice/grid_flags/flags.html">
                 <h2>Flag Page</h2>
-                <img class="box-content" src="ice/grid_flags/flag-grid.png" alt="Flags Page Image">
+                <img class="box-content" src="{{ url_for('static', filename='images/flag-grid.png') }}" alt="Flags Page Image">
                 <p>This In Class Exercise (ICE) was designed to expand the students skills with grid. We were only allowed to change the CSS of the file to create the flags.</p>
             </a>
 
@@ -56,8 +56,8 @@
         </section>
     </main>
     <footer>
-        <a id="header-logo" href="index.html">
-            <img class="logo" src="images/adam-logo-square.jpg" alt="Adam Intial">
+        <a id="header-logo" href="{{ url_for('home') }}">
+            <img class="logo" src="{{ url_for('static', filename='images/adam-logo-square.jpg') }}" alt="Adam Initial">
         </a>
         <p>&copy; 2025 Adam Pattberg</p>
     </footer>

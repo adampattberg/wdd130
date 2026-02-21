@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import os
-from resend import Resend
+from resend import ResendClient
 
 app = Flask(__name__)
 

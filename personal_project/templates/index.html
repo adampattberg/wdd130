@@ -12,7 +12,9 @@
         <header>
             <nav>
 
-                <a href="{{ url_for('home') }}">Home</a>
+                <a id="header-logo" href="{{ url_for('home') }}">
+                    <img class="logo" src="{{ url_for('static', filename='images/adam-logo-square.jpg') }}" alt="Adam Initial">
+                </a>
                 <a href="{{ url_for('about') }}">About Me</a>
                 <a href="{{ url_for('ice') }}">ICE</a>
                 <a href="{{ url_for('site_plan_rafting') }}">Rafting Site Plan</a>

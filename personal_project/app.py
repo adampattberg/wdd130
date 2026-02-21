@@ -80,8 +80,7 @@ Message:
         to=["adam.pattberg@gmail.com"],
         subject="Portfolio Contact Form",
         text=body,
-)
-        )
+    )
     except Exception as e:
         print("Resend error:", e)
         return "Failed to send email", 500

@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import smtplib
+import os
 from email.mime.text import MIMEText
 
 app = Flask(__name__)
@@ -14,23 +15,18 @@ def send():
     email = request.form["email"]
     message = request.form["message"]
 
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
     sender_email = os.environ.get("EMAIL_USER")
     sender_password = os.environ.get("EMAIL_PASS")
     receiver_email = "adam.pattberg@gmail.com"
 
     body = f"""
-    New Contact Form Submission
+New Contact Form Submission
 
-    Name: {name}
-    Email: {email}
-    Message:
-    {message}
-    """
+Name: {name}
+Email: {email}
+Message:
+{message}
+"""
 
     msg = MIMEText(body)
     msg["Subject"] = "Portfolio Contact Form"

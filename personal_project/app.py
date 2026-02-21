@@ -53,3 +53,7 @@ def about():
 @app.route("/ice")
 def ice():
     return render_template("ice.html")
+
+@app.route("/")
+def site-plan-rafting():
+    return render_template("site-plan-rafting.html")

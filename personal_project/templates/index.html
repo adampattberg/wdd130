@@ -1,123 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam Pattberg | Home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adam Pattberg | Home</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+    </head>
 
-<body>
-    <header>
-        <nav>
+    <body>
+        <header>
+            <nav>
 
-            <a href="{{ url_for('home') }}">Home</a>
-            <a href="{{ url_for('about') }}">About Me</a>
-            <a href="{{ url_for('ice') }}">ICE</a>
-            <a href="{{ url_for('site_plan_rafting') }}">Rafting Site Plan</a>
-            <a href="{{url_for('index.html') }}">White Water Rafting Webpage</a>
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('about') }}">About Me</a>
+                <a href="{{ url_for('ice') }}">ICE</a>
+                <a href="{{ url_for('site_plan_rafting') }}">Rafting Site Plan</a>
+                <a href="{{url_for('index.html') }}">White Water Rafting Webpage</a>
 
-        </nav>
-    </header>
-    <main>
+            </nav>
+        </header>
+        <main>
 
-        <div id="about">
-            <div id="about-box">
-                <img id="about-img" src="{{ url_for('static', filename='images/FZR-Sunset-Zoom.jpg') }}" alt="Image of purple motorcycle with sunset in background">
+            <div id="about">
+                <div id="about-box">
+                    <img id="about-img" src="{{ url_for('static', filename='images/FZR-Sunset-Zoom.jpg') }}" alt="Image of purple motorcycle with sunset in background">
+                </div>
+                <section id="about-msg">
+                    <h1 class="about-title">Adam Pattberg</h1>
+                    <p>Hello, my name is Adam Pattberg and I'm a student going to Brigham Young University - Idaho. I love learning about new things, which is why I took this Web Design class.</p>
+                    <p>In my spare time I like to explore the national and state parks in the area, watching movies, and learning how things work.</p>
+                </section>
             </div>
-            <section id="about-msg">
-                <h1 class="about-title">Adam Pattberg</h1>
-                <p>Hello, my name is Adam Pattberg and I'm a student going to Brigham Young University - Idaho. I love learning about new things, which is why I took this Web Design class.</p>
-                <p>In my spare time I like to explore the national and state parks in the area, watching movies, and learning how things work.</p>
+            
+        <div id="content">
+
+            <section id="blue">
+                <h2>EMT Certification</h2>
+                <img class="box-content" src="{{ url_for('static', filename='images/OEC-Award.jpeg') }}" alt="2nd Place Award in OEC Competition">
+                <p>I earned my Emergency Medical Technician Certification on 06/21/2022 through my high school. The program I went through was called Opportunities in Emergency Care and it was great! I then worked as an EMT for about a year. It was a great experience and I have a lot of respect for those in the first responder industry. </p>
+            </section>
+
+            <section id="red">
+                <h2>BYUI SAE</h2>
+                <img class="box-content" src="{{ url_for('static', filename='images/byui-sae-logo.png') }}" alt="BYUI SAE Logo">
+                <p>As of 01/18/2026 I have been involved in BYUI SAE Leadership. I am a part of the social media team, assisting with workshopping, creating, editing, and posting of our social media presence on Instagram and Facebook. This experience has allowed me to get comfortable with talking to others, intiating conversations, and being on camera.</p>
+            </section>
+
+            <section id="green">
+                <h2>Data Analysis</h2>
+                <img class="box-content" src="{{ url_for('static', filename='images/CAN-BUS-Data.png') }}" alt="CAN BUS Data">
+                <p>One of my favorite parts about going to BYUI is that their automotive program is hands on and modern. They teach you not only electrical, which is crucial, but also data acquisition and analysis. This includes using a PicoScope to gather electrical signals from various sensors or computers. The most fascinating of which is CAN BUS signals.</p>
             </section>
         </div>
-        
-    <div id="content">
+            <section id="content2">
 
-        <section id="blue">
-            <h2>EMT Certification</h2>
-            <img class="box-content" src="{{ url_for('static', filename='images/OEC-Award.jpeg') }}" alt="2nd Place Award in OEC Competition">
-            <p>I earned my Emergency Medical Technician Certification on 06/21/2022 through my high school. The program I went through was called Opportunities in Emergency Care and it was great! I then worked as an EMT for about a year. It was a great experience and I have a lot of respect for those in the first responder industry. </p>
-        </section>
-
-        <section id="red">
-            <h2>BYUI SAE</h2>
-            <img class="box-content" src="{{ url_for('static', filename='images/byui-sae-logo.png') }}" alt="BYUI SAE Logo">
-            <p>As of 01/18/2026 I have been involved in BYUI SAE Leadership. I am a part of the social media team, assisting with workshopping, creating, editing, and posting of our social media presence on Instagram and Facebook. This experience has allowed me to get comfortable with talking to others, intiating conversations, and being on camera.</p>
-        </section>
-
-        <section id="green">
-            <h2>Data Analysis</h2>
-            <img class="box-content" src="{{ url_for('static', filename='images/CAN-BUS-Data.png') }}" alt="CAN BUS Data">
-            <p>One of my favorite parts about going to BYUI is that their automotive program is hands on and modern. They teach you not only electrical, which is crucial, but also data acquisition and analysis. This includes using a PicoScope to gather electrical signals from various sensors or computers. The most fascinating of which is CAN BUS signals.</p>
-        </section>
-    </div>
-        <section id="content2">
-
-            <section id="list">
-                <h2>Favorite Movies</h2>
-                <ul>
-                    <li>The Sixth Sense</li>
-                    <li>Interstellar</li>
-                    <li>Spider-Man: Into the Spider-Verse</li>
-                    <li>Dune: Part 2</li>
-                    <li>Baby Driver</li>
-                </ul>
-            </section>
-
-                <section id="table">
-                    <h2>Vehicle Repairs</h2>
-                    <table>
-                        <tr>
-                            <th>Vehicle</th>
-                            <th>Issue</th>
-                            <th>Solution</th>
-                        </tr>
-                        <tr>
-                            <td>Honda Accord</td>
-                            <td>Vibration at idle in drive</td>
-                            <td>Replaced motor mount</td>
-                        </tr>
-                        <tr>
-                            <td>Toyota Corolla</td>
-                            <td>No start</td>
-                            <td>Rebuilt engine</td>
-                        </tr>
-                        <tr>
-                            <td>Subaru Impreza</td>
-                            <td>Grinding in drive</td>
-                            <td>Replaced transmission</td>
-                        </tr>
-                    </table>
+                <section id="list">
+                    <h2>Favorite Movies</h2>
+                    <ul>
+                        <li>The Sixth Sense</li>
+                        <li>Interstellar</li>
+                        <li>Spider-Man: Into the Spider-Verse</li>
+                        <li>Dune: Part 2</li>
+                        <li>Baby Driver</li>
+                    </ul>
                 </section>
 
-            <form class="form" method="POST" action="{{ url_for('send') }}">
-                <h2>Contact Me</h2>
-                <div class="formrow">
-                    <label for="Name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>  
-                <div class="formrow"> 
-                    <label for="Email">Email:</label>
-                    <input type="text" id="email" name="email" required>
-                </div>
-                <div class="formrow">
-                    <label for="Message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <input type="submit" value="Submit">
-                </div>
-            </form>
+                    <section id="table">
+                        <h2>Vehicle Repairs</h2>
+                        <table>
+                            <tr>
+                                <th>Vehicle</th>
+                                <th>Issue</th>
+                                <th>Solution</th>
+                            </tr>
+                            <tr>
+                                <td>Honda Accord</td>
+                                <td>Vibration at idle in drive</td>
+                                <td>Replaced motor mount</td>
+                            </tr>
+                            <tr>
+                                <td>Toyota Corolla</td>
+                                <td>No start</td>
+                                <td>Rebuilt engine</td>
+                            </tr>
+                            <tr>
+                                <td>Subaru Impreza</td>
+                                <td>Grinding in drive</td>
+                                <td>Replaced transmission</td>
+                            </tr>
+                        </table>
+                    </section>
 
-        </section>
-    </main>
-    <footer>
-        <a target="_blank" id="header-logo" href="index.html">
-            <img class="logo" src="{{ url_for('static', filename='images/adam-logo-square.jpg') }}" alt="Adam Intial">
-        </a>
-        <p>&copy; 2025 Adam Pattberg</p>
-    </footer>
-</body>
+                <form class="form" method="POST" action="{{ url_for('send') }}">
+                    <h2>Contact Me</h2>
+                    <div class="formrow">
+                        <label for="Name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>  
+                    <div class="formrow"> 
+                        <label for="Email">Email:</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="formrow">
+                        <label for="Message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                    </div>
+                </form>
 
-</html>
+            </section>
+        </main>
+        <footer>
+            <a target="_blank" id="header-logo" href="index.html">
+                <img class="logo" src="{{ url_for('static', filename='images/adam-logo-square.jpg') }}" alt="Adam Intial">
+            </a>
+            <p>&copy; 2025 Adam Pattberg</p>
+        </footer>
+    </body>
+
+    </html>

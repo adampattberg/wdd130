@@ -56,8 +56,10 @@ def grid_flags():
     return render_template("ice/grid_flags/flags.html")
 
 # Contact form submission
-from resend import Resend
+from resend import emails, ResendClient
 import os
+
+client = ResendClient(api_key=os.environ["RESEND_API_KEY"])
 
 @app.route("/send", methods=["POST"])
 def send():
@@ -75,7 +77,6 @@ Message:
 """
 
     try:
-        client = Resend(os.environ["RESEND_API_KEY"])
         client.emails.send(
             from_email="no-reply@yourdomain.com",
             to=["adam.pattberg@gmail.com"],

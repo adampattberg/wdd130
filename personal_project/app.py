@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import os
-from resend import ResendClient
+from resend import Resend
 
 app = Flask(__name__)
 
@@ -55,7 +55,7 @@ def grid_flags():
     return render_template("ice/grid_flags/flags.html")
 
 # Contact form submission
-client = ResendClient(api_key=os.environ["RESEND_API_KEY"])
+client = Resend(api_key=os.environ["RESEND_API_KEY"])
 
 @app.route("/send", methods=["POST"])
 def send():
@@ -77,7 +77,7 @@ Message:
             from_email="no-reply@yourdomain.com",
             to=["adam.pattberg@gmail.com"],
             subject="Portfolio Contact Form",
-            text=body,
+            text=body
         )
     except Exception as e:
         print("Resend error:", e)

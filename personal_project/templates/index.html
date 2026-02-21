@@ -11,13 +11,21 @@
 <body>
     <header>
         <nav>
-        <a id="header-logo" href="index.html">
-            <img class="logo" src="{{ url_for('static', filename='images/adam-logo-square.jpg') }}" alt="Adam Intial">
-        </a>
-            <a target="_blank" href="../../wwr/index.html">White Water Rafting Webpage</a>
-            <a target="_blank" href="../../wwr/site-plan-rafting.html">White Water Rafting Webpage Siteplan</a>
-            <a target="_blank" href="ice.html">ICE</a>
-            <a target="_blank" href="aboutme.html">About Me</a>
+            <a id="header-logo" href="{{ url_for('home') }}">
+                <img class="logo"
+                    src="{{ url_for('static', filename='images/adam-logo-square.jpg') }}">
+            </a>
+
+            <a target="_blank" href="/static/wwr/index.html">
+                White Water Rafting Webpage
+            </a>
+
+            <a target="_blank" href="/static/wwr/site-plan-rafting.html">
+                White Water Rafting Siteplan
+            </a>
+
+            <a href="{{ url_for('ice') }}">ICE</a>
+            <a href="{{ url_for('about') }}">About Me</a>
         </nav>
     </header>
     <main>
@@ -92,7 +100,7 @@
                     </table>
                 </section>
 
-            <form class="form" method="POST" action="/send">
+            <form class="form" method="POST" action="{{ url_for('send') }}">
                 <h2>Contact Me</h2>
                 <div class="formrow">
                     <label for="Name">Name:</label>
@@ -113,7 +121,7 @@
         </section>
     </main>
     <footer>
-        <a target="_blank" id="header-logo" href="index.html">
+        <a target="_blank" id="header-logo" href="{{ url_for('home') }}">
             <img class="logo" src="{{ url_for('static', filename='images/adam-logo-square.jpg') }}" alt="Adam Intial">
         </a>
         <p>&copy; 2025 Adam Pattberg</p>

@@ -41,3 +41,15 @@ Message:
 
 if __name__ == "__main__":
     app.run()
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+@app.route("/about")
+def about():
+    return render_template("aboutme.html")
+
+@app.route("/ice")
+def ice():
+    return render_template("ice.html")

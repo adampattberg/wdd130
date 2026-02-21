@@ -1,8 +1,12 @@
 from flask import Flask, render_template, request
 import os
-from resend import Resend
+from resend import Emails  # Updated SDK
 
 app = Flask(__name__)
+
+# ----------------------------
+# Page Routes
+# ----------------------------
 
 # Home page
 @app.route("/")
@@ -54,8 +58,12 @@ def valentines():
 def grid_flags():
     return render_template("ice/grid_flags/flags.html")
 
-# Contact form submission
-client = Resend(api_key=os.environ["RESEND_API_KEY"])
+# ----------------------------
+# Contact Form Submission
+# ----------------------------
+
+# Initialize Resend client
+client = Emails(api_key=os.environ.get("RESEND_API_KEY"))
 
 @app.route("/send", methods=["POST"])
 def send():
@@ -73,9 +81,10 @@ Message:
 """
 
     try:
-        client.emails.send(
-            from_email="no-reply@yourdomain.com",
-            to=["adam.pattberg@gmail.com"],
+        # Send email via Resend
+        client.send(
+            from_email="no-reply@yourdomain.com",  # replace with a verified sender
+            to="adam.pattberg@gmail.com",
             subject="Portfolio Contact Form",
             text=body
         )
@@ -85,6 +94,8 @@ Message:
 
     return render_template("thankyou.html")
 
-# Local testing only
+# ----------------------------
+# Local Testing
+# ----------------------------
 if __name__ == "__main__":
     app.run(debug=True)

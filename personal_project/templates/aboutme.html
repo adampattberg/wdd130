@@ -11,9 +11,9 @@
 <body>
     <header>
         <nav>
-        <a id="header-logo" href="index.html">
-            <img class="logo" src="images/adam-logo-square.jpg" alt="Adam Intial">
-        </a>
+            <a id="header-logo" href="{{ url_for('home') }}">
+                <img class="logo" src="{{ url_for('static', filename='images/adam-logo-square.jpg') }}" alt="Adam Initial">
+            </a>
             <a target="_blank" href="wwr/index.html">White Water Rafting Webpage</a>
             <a target="_blank" href="wwr/site-plan-rafting.html">White Water Rafting Webpage Siteplan</a>
             <a target="_blank" href="ice/index.html">ICE</a>
@@ -23,7 +23,7 @@
     <main>
         <div id="about">
             <div id="about-box">
-                <img id="about-img" src="images/personal-photo.jpeg" alt="Adam Portrait Photo">
+                <img id="about-img" src="{{ url_for('static', filename='images/personal-photo.jpeg') }}" alt="Adam Portrait Photo">
             </div>
             <section id="about-msg">
                 <h1 class="about-title">Adam Pattberg</h1>
@@ -35,19 +35,19 @@
 
             <section id="PTA">
             <h2>Vehicles</h2>
-            <img class="box-content" src="images/FZR-nature.jpg" alt="2nd Place Award in OEC Competition">
+            <img class="box-content" src="{{ url_for('static', filename='images/FZR-nature.jpg') }}" alt="2nd Place Award in OEC Competition">
             <p>I love anything with an engine in it. Cars are the easiest expression of this, but I also love planes, helicopters, motorcycles, jetskis, boats, etc. I had the privilege of flying a Cessna 172 skyhawk several years ago, which was an amazing experience. It is on my bucket list to fly a helicopter one day. </p>
         </section>
 
         <section id="TF">
             <h2>Theater & Film</h2>
-            <img class="box-content" src="images/tech-crew.jpg" alt="BYUI SAE Logo">
+            <img class="box-content" src="{{ url_for('static', filename='images/tech-crew.jpg') }}" alt="BYUI SAE Logo">
             <p>I was a part of my middle and high schools theater program, but only on the technical side. Through the countless hours I spent there, I learned many different skills and experiences. One thing I learned was how to appreciate the art of theater and film. I have since come to love movies and shows. There are many films are on my list that I have not seen yet, and unfortunately, the list gets longer every day.</p>
         </section>
 
         <section id="NB">
             <h2>Natures Beauty</h2>
-            <img class="box-content" src="images/rainbow.jpg" alt="CAN BUS Data">
+            <img class="box-content" src="{{ url_for('static', filename='images/CAN-BUS-Data.png') }}" alt="CAN BUS Data">
             <p>During my time in Boy Scouts, I came to love the outdoors. I love to learn about and experience the many natural wonders of the world. I love understanding how these features formed. For example, there is a national preserve called Craters of the Moon. This is an area in Idaho that had lava flow across it that then melted into the ground, creating some amazing caves and tunnel systems.  </p>
         </section>
 
@@ -55,8 +55,8 @@
 
     </main>
     <footer>
-        <a id="header-logo" href="index.html">
-            <img class="logo" src="images/adam-logo-square.jpg" alt="Adam Intial">
+        <a id="header-logo" href="{{ url_for('home') }}">
+            <img class="logo" src="{{ url_for('static', filename='images/adam-logo-square.jpg') }}" alt="Adam Initial">
         </a>
         <p>&copy; 2025 Adam Pattberg</p>
     </footer>

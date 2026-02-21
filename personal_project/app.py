@@ -85,12 +85,11 @@ Message:
     msg["To"] = receiver_email
 
     try:
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=10) as server:
             server.login(sender_email, sender_password)
             server.send_message(msg)
     except Exception as e:
         print(f"Email sending failed: {e}")
-        return "Failed to send email", 500
 
     return render_template("thankyou.html")
 

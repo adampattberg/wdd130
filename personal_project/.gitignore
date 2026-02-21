@@ -4,3 +4,5 @@ EMAIL_PASS=roij oghv wimr hrvn
 .venv
 __pycache__/
 *.pyc
+.DS_Store
+.zip

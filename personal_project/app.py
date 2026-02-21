@@ -55,6 +55,8 @@ def grid_flags():
     return render_template("ice/grid_flags/flags.html")
 
 # Contact form submission
+from resend import Resend
+
 client = Resend(api_key=os.environ.get("RESEND_API_KEY"))
 
 @app.route("/send", methods=["POST"])

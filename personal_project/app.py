@@ -13,7 +13,7 @@ def home():
 # White Water Rafting page
 @app.route("/white-water-rafting-webpage")
 def white_water_rafting():
-    return render_template("index.html")  # change to actual template if needed
+    return render_template("wwr.html")  # change to actual template if needed
 
 # Site plan rafting page
 @app.route("/site-plan-rafting")

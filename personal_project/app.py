@@ -40,9 +40,9 @@ Message:
     return render_template("thankyou.html")
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)  # Only for local testing
 
-@app.route("/")
+@app.route("/white-water-rafting-webpage")
 def home():
     return render_template("index.html")
 

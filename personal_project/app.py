@@ -56,19 +56,14 @@ def grid_flags():
     return render_template("ice/grid_flags/flags.html")
 
 # Contact form submission
+from resend import Resend
+import os
+
 @app.route("/send", methods=["POST"])
 def send():
     name = request.form.get("name")
     email = request.form.get("email")
-    message = request.form.get("message")
-
-    sender_email = os.environ.get("EMAIL_USER")
-    sender_password = os.environ.get("EMAIL_PASS")
-    receiver_email = "adam.pattberg@gmail.com"
-
-    if not sender_email or not sender_password:
-        print("ERROR: EMAIL_USER or EMAIL_PASS not set")
-        return "Email configuration missing", 500
+    message_text = request.form.get("message")
 
     body = f"""
 New Contact Form Submission
@@ -76,20 +71,19 @@ New Contact Form Submission
 Name: {name}
 Email: {email}
 Message:
-{message}
+{message_text}
 """
 
-    msg = MIMEText(body)
-    msg["Subject"] = "Portfolio Contact Form"
-    msg["From"] = sender_email
-    msg["To"] = receiver_email
-
     try:
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=10) as server:
-            server.login(sender_email, sender_password)
-            server.send_message(msg)
+        client = Resend(os.environ["RESEND_API_KEY"])
+        client.emails.send(
+            from_email="no-reply@yourdomain.com",
+            to=["adam.pattberg@gmail.com"],
+            subject="Portfolio Contact Form",
+            text=body,
+        )
     except Exception as e:
-        print(f"Email sending failed: {e}")
+        print("Resend error:", e)
 
     return render_template("thankyou.html")
 

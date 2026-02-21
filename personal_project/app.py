@@ -54,6 +54,6 @@ def about():
 def ice():
     return render_template("ice.html")
 
-@app.route("/")
-def site-plan-rafting():
+@app.route("/site-plan-rafting")
+def site_plan_rafting():
     return render_template("site-plan-rafting.html")

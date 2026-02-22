@@ -14,10 +14,10 @@
             <a id="header-logo" href="{{ url_for('home') }}">
                 <img class="logo" src="{{ url_for('static', filename='images/adam-logo-square.jpg') }}" alt="Adam Initial">
             </a>
-            <a target="_blank" href="wwr/index.html">White Water Rafting Webpage</a>
-            <a target="_blank" href="wwr/site-plan-rafting.html">White Water Rafting Webpage Siteplan</a>
-            <a target="_blank" href="ice/index.html">ICE</a>
-            <a target="_blank" href="aboutme.html">About Me</a>
+            <a target="_blank" href="{{ url_for('white_water_rafting') }}">White Water Rafting Webpage</a>
+            <a target="_blank" href="{{ url_for('site_plan_rafting') }}">White Water Rafting Webpage Siteplan</a>
+            <a target="_blank" href="{{ url_for('ice') }}">ICE</a>
+            <a target="_blank" href="{{ url_for('about') }}">About Me</a>
         </nav>
     </header>
     <main>

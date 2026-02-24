@@ -51,7 +51,7 @@ def grid_flags():
 
 @app.route("/position")
 def position():
-    return render_template("ice/grid_flags/positioning.html")
+    return render_template("ice/positioning/positioning.html")
 
 # ---------------- EMAIL ----------------
 

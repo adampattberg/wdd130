@@ -143,6 +143,22 @@ h1{
     color: #6969b3;
 }
 
+#positioning{
+    background-color: #CC7178;
+    border: 3px solid black;
+    box-shadow: 5px 5px 10px #6f7364;
+    justify-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+#positioning:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    color: #6969b3;
+}
+
 .box-content{
     width: 325px;
     height: 250px;

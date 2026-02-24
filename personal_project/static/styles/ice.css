@@ -8,7 +8,7 @@ Fonts needed are Arial, Helvetica, and Sans-Serif*/
 }
 
 body{
-    max-width: 1000px;
+    max-width: 95%;
     margin: 0 auto;
     background-color: #553a7b;
     font-size: 20px;

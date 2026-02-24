@@ -49,8 +49,8 @@ def valentines():
 def grid_flags():
     return render_template("ice/grid_flags/flags.html")
 
-@app.route("/position")
-def position():
+@app.route("/positioning")
+def positioning():
     return render_template("ice/positioning/positioning.html")
 
 # ---------------- EMAIL ----------------

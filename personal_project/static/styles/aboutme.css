@@ -69,6 +69,7 @@ main{
 
 #about{
     display: grid;
+    grid-template-rows: 0.5fr 1.4fr 0.447fr;
     text-align: center;
     box-shadow: 5px 5px 10px #6f7364;
     grid-column: 1/2;
@@ -80,7 +81,6 @@ main{
 
 #about-img{
     width: 100%;
-    margin-top: -470px;
     z-index: -1;
     border: 3px solid #4b244a;
 }
@@ -89,7 +89,13 @@ main{
     grid-row: 1/2;
     color: #25171a;
     background-color: #CC7178;
-    max-height: 345px;
+    border: 3px solid #4b244a;
+}
+
+#job{
+    grid-row: 3/4;
+    color: #25171a;
+    background-color: #CC7178;
     border: 3px solid #4b244a;
 }
 
@@ -101,7 +107,8 @@ h1{
     background-color: #CC7178;
     border: 3px solid #4b244a;
     box-shadow: 5px 5px 10px #6f7364;
-    float: left;
+    text-align: center;
+    justify-items: center;
 }
 
 #TF{

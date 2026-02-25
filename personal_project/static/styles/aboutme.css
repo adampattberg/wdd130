@@ -99,19 +99,13 @@ h1{
 
 #PTA{
     background-color: #CC7178;
-    grid-column: 1/2;
-    grid-row: 2/3;
     border: 3px solid #4b244a;
     box-shadow: 5px 5px 10px #6f7364;
-    text-align: center;
-    max-height: 600px;
-    justify-items: center;
+    float: left;
 }
 
 #TF{
     background-color: #CC7178;
-    grid-column: 2/3;
-    grid-row: 2/3;
     border: 3px solid #4b244a;
     box-shadow: 5px 5px 10px #6f7364;
     text-align: center;
@@ -120,8 +114,6 @@ h1{
 
 #NB{
     background-color: #CC7178;
-    grid-column: 3/4;
-    grid-row: 2/3;
     border: 3px solid #4b244a;
     box-shadow: 5px 5px 10px #6f7364;
     text-align: center;

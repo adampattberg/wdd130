@@ -26,6 +26,7 @@ nav{
     border: 3px solid #4b244a;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 35px 35px 35px;
     justify-items: center;
     background-color: #98c1d9;
     padding: 1em;
@@ -38,12 +39,15 @@ nav{
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    margin-top: -20px;
 }
 
 nav a{
     color: #25171a;
     text-decoration: none;
     text-align: center;
+    grid-row: 2/3;
+    margin-top: -10px;
 }
 
 nav a:hover{
@@ -54,6 +58,7 @@ nav a:hover{
 main{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
 }
 
 
@@ -64,30 +69,27 @@ main{
 
 #about{
     display: grid;
-    border: 3px solid #4b244a;
     text-align: center;
     box-shadow: 5px 5px 10px #6f7364;
-    margin-bottom: 10px;
     grid-column: 1/2;
 }
 
 #about-box{
     z-index: -1;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #about-img{
     width: 100%;
-    height: auto;
+    margin-top: -470px;
     z-index: -1;
+    border: 3px solid #4b244a;
 }
 
 #about-msg{
     grid-row: 1/2;
-    margin-top: 10px;
     color: #25171a;
     background-color: #CC7178;
+    max-height: 345px;
     border: 3px solid #4b244a;
 }
 
@@ -102,6 +104,7 @@ h1{
     border: 3px solid #4b244a;
     box-shadow: 5px 5px 10px #6f7364;
     text-align: center;
+    max-height: 600px;
 }
 
 #TF{

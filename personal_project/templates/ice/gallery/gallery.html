@@ -33,7 +33,7 @@
             
         }
         #gallery a {
-            cursor: url('images/christus.png'), pointer;
+            cursor: url_for('static', filename='images/christus.png'), pointer;
         }
         #gallery img {
             /* make a thumbnail of the image that is 200x300 
@@ -56,12 +56,12 @@
         </nav>
         <main>
             <div id="gallery">
-                <a href="images/big/img1.jpg"><img src="images/small/img1_thumb.jpg" alt="huge file size" ></a>
-                <a href="images/big/img2.jpg"><img src="images/small/img2_thumb.jpg" alt="huge file size" ></a>
-                <a href="images/big/img3.jpg"><img src="images/small/img3_thumb.jpg" alt="huge file size" ></a>
-                <a href="images/big/img4.jpg"><img src="images/small/img4_thumb.jpg" alt="huge file size" ></a>
-                <a href="images/big/img5.jpg"><img src="images/small/img5_thumb.jpg" alt="huge file size" ></a>
-                <a href="images/big/img6.jpg"><img src="images/small/img6_thumb.jpg" alt="huge file size" ></a>
+                <a href="{{ url_for('images/img1.jpg') }}"><img src="{{ url_for('static', filename='images/img1_thumb.jpg') }}" alt="huge file size" ></a>
+                <a href="{{ url_for('images/img2.jpg') }}"><img src="{{ url_for('static', filename='images/img2_thumb.jpg') }}" alt="huge file size" ></a>
+                <a href="{{ url_for('images/img3.jpg') }}"><img src="{{ url_for('static', filename='images/img3_thumb.jpg') }}" alt="huge file size" ></a>
+                <a href="{{ url_for('images/img4.jpg') }}"><img src="{{ url_for('static', filename='images/img4_thumb.jpg') }}" alt="huge file size" ></a>
+                <a href="{{ url_for('images/img5.jpg') }}"><img src="{{ url_for('static', filename='images/img5_thumb.jpg') }}" alt="huge file size" ></a>
+                <a href="{{ url_for('images/img6.jpg') }}"><img src="{{ url_for('static', filename='images/img6_thumb.jpg') }}" alt="huge file size" ></a>
             </div>
         </main>
     </div>

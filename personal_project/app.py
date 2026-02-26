@@ -53,6 +53,10 @@ def grid_flags():
 def positioning():
     return render_template("ice/positioning/positioning.html")
 
+@app.route("/gallery")
+def gallery():
+    return render_template("ice/gallery/gallery.html")
+
 # ---------------- EMAIL ----------------
 
 @app.route("/send", methods=["POST"])

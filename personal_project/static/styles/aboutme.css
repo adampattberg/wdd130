@@ -61,43 +61,28 @@ main{
     margin-top: 10px;
 }
 
-
-#content{
-    grid-column: 2/3;
-    
-}
-
 #about{
-    display: grid;
-    grid-template-rows: 0.3fr 0.8fr 0.3fr;
     text-align: center;
-    box-shadow: 5px 5px 10px #6f7364;
     grid-column: 1/2;
-}
-
-#about-box{
-    z-index: -1;
 }
 
 #about-img{
     width: 100%;
     z-index: -1;
     border: 3px solid #4b244a;
-    grid-row: 2/3;
 }
 
 #about-msg{
-    grid-row: 1/2;
     color: #25171a;
     background-color: #FAF9F6;
     border: 3px solid #4b244a;
 }
 
 #job{
-    grid-row: 3/5;
     color: #25171a;
     background-color: #FAF9F6;
     border: 3px solid #4b244a;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 h1{

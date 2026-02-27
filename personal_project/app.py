@@ -57,6 +57,30 @@ def positioning():
 def gallery():
     return render_template("ice/gallery/gallery.html")
 
+@app.route("/img1")
+def img1():
+    return render_template("ice/gallery/img1.jpg")
+
+@app.route("/img2")
+def img2():
+    return render_template("ice/gallery/img2.jpg")
+
+@app.route("/img3")
+def img3():
+    return render_template("ice/gallery/img3.jpg")
+
+@app.route("/img4")
+def img4():
+    return render_template("ice/gallery/img4.jpg")
+
+@app.route("/img5")
+def img5():
+    return render_template("ice/gallery/img5.jpg")
+
+@app.route("/img6")
+def img6():
+    return render_template("ice/gallery/img6.jpg")
+
 # ---------------- EMAIL ----------------
 
 @app.route("/send", methods=["POST"])

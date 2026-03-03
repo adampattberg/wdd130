@@ -23,16 +23,16 @@
             border-radius: 15px;
             border: 5px solid darkblue;
         }
-
-        #bimg{
-            width: 80px;
-            height: 110px;
-        }
-
+        
         #headerimg{
             max-width: 480px;
             max-height: 320px;
             z-index: -1;
+        }
+        
+        #footerimg{
+            width: 80px;
+            height: 110px;
         }
 
         #closeBtn{
@@ -58,10 +58,11 @@
 
         #myForm{
             grid-row: 2/3;
-            margin-top: 75px;
+            margin-top: 20px;
             padding: 20px;
             display: block;
         }
+
         </style>
 
 
@@ -72,7 +73,7 @@
 <body>
         <div id="formContainer">
             <div id="header">
-                <img id="headerimg" src="images/jesus_feeds_5000.jpeg" alt="Jesus Feeds 5000">
+                <img id="headerimg" src="{{ url_for('static', filename='images/jesus_feeds_5000.jpeg') }}" alt="Jesus Feeds 5000">
                 <h1>Daily Feed</h1>
                 <h2>Scripture a Day</h2>
             </div>
@@ -110,11 +111,11 @@
                     <button type="submit">Submit</button>
                 </section>
                 <div id="footer">
-                <img id="bimg" src="images/old_testament.webp" alt="Old Testament">
-                <img id="bimg" src="images/new_testament.webp" alt="New Testament">
-                <img id="bimg" src="images/book_of_mormon.webp" alt="Book of Mormon">
-                <img id="bimg" src="images/doctrine_and_covenants.webp" alt="Doctrine and Covenants">
-                <img id="bimg" src="images/pearl_of_great_price.webp" alt="Pearl of Great Price">
+                <img id="footerimg" src="{{ url_for('static', filename='images/old_testament.webp') }}" alt="Old Testament">
+                <img id="footerimg" src="{{ url_for('static', filename='images/new_testament.webp') }}" alt="New Testament">
+                <img id="footerimg" src="{{ url_for('static', filename='images/book_of_mormon.webp') }}" alt="Book of Mormon">
+                <img id="footerimg" src="{{ url_for('static', filename='images/doctirine_and_covenants.webp') }}" alt="Doctrine and Covenants">
+                <img id="footerimg" src="{{ url_for('static', filename='images/pearl_of_great_price.webp') }}" alt="Pearl of Great Price">
                 </div>
             </form>
         </div>

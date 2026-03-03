@@ -58,7 +58,7 @@ def gallery():
     return render_template("ice/gallery/gallery.html")
 
 @app.route("/signup")
-def gallery():
+def signup():
     return render_template("ice/signup/signup.html")
 
 # ---------------- EMAIL ----------------
